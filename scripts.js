@@ -6,8 +6,8 @@ animate(
   { repeat: Infinity, repeatType: "loop", duration: 5, ease: "linear" }
 );
 
-const disk = document.querySelector(".disk");
 const logo = document.querySelector(".logo");
+const disk = document.querySelector(".disk");
 
 logo.addEventListener("click", ()=>{
     animate(".logo", { scale: [1, 0] }, { ease: "circInOut", duration: 1 });
