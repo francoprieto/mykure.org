@@ -1,4 +1,10 @@
 import { animate } from "https://cdn.jsdelivr.net/npm/framer-motion@11.11.11/dom/+esm";
+import { Howl, Howler } from "https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js";
+
+const logo = document.querySelector(".logo");
+const disk = document.querySelector(".disk");
+
+animate(".disk", {scale: [0,0]});
 
 animate(
   ".disk",
@@ -6,8 +12,6 @@ animate(
   { repeat: Infinity, repeatType: "loop", duration: 5, ease: "linear" }
 );
 
-const logo = document.querySelector(".logo");
-const disk = document.querySelector(".disk");
 
 logo.addEventListener("click", ()=>{
     animate(".logo", { scale: [1, 0] }, { ease: "circInOut", duration: 1 });
